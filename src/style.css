@@ -1,0 +1,451 @@
+* {
+    margin: 0%;
+}
+
+body {
+    background-image: url(img-extra/FondoPAISAJEPOKEMÓN.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.imgTitle {
+    width: 45%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Gaegu', cursive;
+    font-size: 2.3vw;
+    /*cambié a vh (viewport weight) para que sea responsive*/
+    font-weight: bolder;
+    color: #1A396F;
+    margin: 2px;
+    padding-bottom: 8px;
+}
+
+#filterDiv {
+    background-color: #61D161;
+    background-size: 30%;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding: 8px;
+    border-radius: 20px;
+    align-content: center;
+}
+
+label {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    margin-right: 0%;
+    margin-left: 6%;
+}
+
+#filter {
+    border-radius: 15px;
+    background-size: contain;
+    background-color: rgba(255, 255, 255, 0.50);
+    padding: 8px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#sort {
+    border-radius: 15px;
+    background-size: contain;
+    background-color: rgba(255, 255, 255, 0.50);
+    padding: 8px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#sortOrder {
+    border-radius: 15px;
+    background-size: contain;
+    background-color: rgba(255, 255, 255, 0.50);
+    padding: 8px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+option {
+    background-color: #58AD4F;
+    padding: 8px;
+    text-align: center;
+}
+.boxCard {
+    list-style: none;/* */
+    align-items: center;
+    justify-content: space-around;
+    contain: content;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    padding-right: 0%;
+    padding-inline-start: 10%;
+    padding-inline-end: 10%;
+}
+
+.individualCard {
+    display: inline-flex;
+    padding: 30px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 21px;
+    border-radius: 10px;
+    background: #FFCB05;
+    box-shadow: 5px 3px 3px rgba(134, 131, 131, 0.774);
+    margin: 2%;
+}
+
+img {
+    width: 141px;
+    height: 141px;
+}
+
+.typeCPHP {
+    align-content: center;
+    width: 150px;
+    height: 37px;
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #1A396F;
+}
+
+dd[itemprop='type'] {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.50);
+    justify-content: center;
+    margin: 0%;
+    font-size: small;
+    text-align: center;
+    display: flex;
+    padding-top: 1px;
+    align-items: center;
+}
+
+.imgType {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+}
+
+.imgRW {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+}
+
+.sectionRW {
+    display: flex;
+    width: 188px;
+    height: 22px;
+    padding: 10px 2px;
+    flex-direction:row;
+    align-items:center;
+    justify-content:baseline;
+    gap: 5px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.50);
+}
+
+dd[itemprop='max-cp'] {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.50);
+    display: flex;
+    text-align: center;
+    gap: 5px;
+    margin: 0%;
+    font-size: small;
+    justify-content: center;
+    align-items: center;
+}
+
+dd[itemprop='max-hp'] {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.50);
+    display: flex;
+    text-align: center;
+    gap: 5px;
+    margin: 0%;
+    font-size: small;
+    justify-content: center;
+    align-items: center;
+}
+
+dd[itemprop="image"] {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+}
+
+dd[itemprop="name"] {
+    /* selector de */
+    display: flex;
+    width: 141px;
+    height: 30px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    background: #3466AF;
+    color: #FCFEFE;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0%;
+    
+}
+
+dd[itemprop="region"] {
+    display: flex;
+    background:rgba(255, 255, 255, 0.50);
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #1A396F;
+    margin: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 35%;
+    padding-right: 35%;
+}
+
+.dataAndQuantity {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.50);
+    margin: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+/* .dataStatistical {
+    display: flex;
+    background: #3466AF;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-right: 30%;
+    margin-left: 30%;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: medium;
+    text-align: center;
+    align-content: center;
+} */
+
+#root {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: #3466AF;
+    background-size: contain;
+    margin: 0px;
+}
+
+.firstP {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 251, 251);
+    text-align: center;
+    font-weight: normal;
+    margin: 0px;
+    padding-top: 5%;
+}
+
+.secondP {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 251, 251);
+    text-align: center;
+    font-weight: normal;
+    margin: 0px;
+    padding-bottom: 5%;
+}
+
+#buttonClear {
+    padding: 0.8%;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: #FBFF00;
+    border-radius: 18px;
+    border: none;
+    color: rgb(41, 37, 37);
+    font-weight: bold;
+}
+
+select {
+    margin-left: 1%;
+}
+
+.type {
+    background-color: pink;
+}
+
+header {
+    background-color: none;
+}
+
+button {
+    margin-left: 6%;
+}
+
+.middleData {
+    display: flex;
+}
+
+dl[itemprop='weaknessesList'] {
+    max-width: 50px;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.425);
+    border-radius: 20px;
+}
+
+dd[itemprop='weaknesses'] {
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: smaller;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+dl[itemprop='resistantList'] {
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.425);
+    border-radius: 20px;
+}
+
+dd[itemprop='resistant'] {
+    justify-content: center;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: smaller;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.noDataStyle {
+    background-color: #fffbeb77;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    padding: 8%;
+    margin: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+@media (max-width: 800px) {
+    .imgTitle {
+        width: 75%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+    h1 {
+        text-align: center;
+        font-family: 'Gaegu', cursive;
+        font-size: 2.3vw;
+        /*cambié a vh (viewport weight) para que sea responsive*/
+        font-weight: bolder;
+        color: #1A396F;
+        margin: 2px;
+        padding-bottom: 8px;
+        font-size: 110%;
+    }
+
+    #filterDiv {
+        display: flex;
+        flex-direction: column;
+        background-color: #58AD4F;
+        background-size: 30%;
+        margin-right: 10%;
+        margin-left: 10%;
+        padding: 5%;
+        border-radius: 20px;
+        align-content: center;
+    }
+
+    label {
+        display: inline-block;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500px;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    .dataAndQuantity {
+        display: block;
+        padding: 2%;
+    }
+    .dataStatistical {
+        margin: 6%;
+    }
+    .numberFilter {
+        margin: 6%;
+    }
+    .individualCard {
+    display: inline-flex;
+    padding: 15%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 21px;
+    border-radius: 10px;
+    background:#FFCB05;
+    box-shadow: 5px 3px 3px rgba(134, 131, 131, 0.774);
+    margin: 2%;
+}
+    .boxCard {
+        margin: 0;
+        align-items: center;
+        align-content: center;
+        /* display: contents;
+        flex-wrap: wrap; */
+    }
+    #buttonClear {
+        padding: 4%;
+        margin: 3%;
+        margin-left: 20%;
+        margin-right: 20%;
+        background-color: #FBFF00;
+        border-radius: 18px;
+        border: none;
+        color: rgb(41, 37, 37);
+        font-weight: bold;
+    }
+}
+ 

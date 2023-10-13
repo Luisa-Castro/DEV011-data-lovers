@@ -1,12 +1,96 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- vista responsive -->
+    <title>PokeData [Data Lovers]
+    </title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1>"Prueba pokedata</h1>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Gaegu:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img class="imgTitle" src="img-extra/PokeDataTitleCUT.png" alt="PokeData">
+        <h1>
+            Descubre tus Pokemones favs!
+        </h1>
+        <nav id="filterDiv">
+            <!-- <div id="prueba"><img src=img-extra/bug.png width="40" height="40"/></div> -->
+            <!--Cambie el <p> por el <label> que pide el read.me-->
+            <label for="filter">
+                Tipo
+            </label>
+            <select id="filter" data-testid="select-filter" name="type">
+                <option value="seleccionar" selected>Seleccionar</option>
+                <option value="dark">Dark</option>
+                <option value="dragon">Dragon</option>
+                <option value="electric">Electric</option>
+                <option value="fairy">Fairy</option>
+                <option value="fighting">Fighting</option>
+                <option value="fire">Fire</option>
+                <option value="flying">Flying</option>
+                <option value="ghost">Ghost</option>
+                <option value="grass">Grass</option>
+                <option value="ground">Ground</option>
+                <option value="ice">Ice</option>
+                <option value="normal">Normal</option>
+                <option value="poison">Poison</option>
+                <option value="psychic">Psychic</option>
+                <option value="rock">Rock</option>
+                <option value="steel">Steel</option>
+                <option value="water">Water</option>
+            </select>
+            <label for="sort">
+                Ordenar por
+            </label>
+            <select data-testid="sort" id="sort" name="stats">
+                <option value="seleccionar" selected>Seleccionar</option>
+                <option value="weaknesses">Nro. de debilidades</option>
+                <option value="max-cp">Puntos de salud (CP)</option>
+                <option value="max-hp">Puntos de ataque (HP)</option>
+            </select>
+            <label for="sortOrder">Orden</label>
+            <select data-testid="sort" id="sortOrder" name="sort-order">
+                <option value="Descendente" selected>Descendente</option>
+                <option value="Ascendente">Ascendente</option>
+            </select>
+            <button id="buttonClear" data-testid="button-clear">
+                Limpiar
+            </button>
+        </nav>
+    </header>
+    <main>
+        <nav class="dataAndQuantity">
+            <h2 class="numberFilter">
+                Nro. de Pokemones:
+            </h2>
+            <h2 class="kanto">
+                Kanto:
+            </h2>
+            <h2 class="johto">
+                Johto:
+            </h2>
+            <h2 class="dataStatistical">
+                El peso promedio de pokemones es:
+            </h2>
+        </nav>
+        <section id="root"></section>
+    </main>
+    <footer>
+        <p class="firstP">
+            [ Laboratoria DEV011 2023 ]
+        </p>
+        <p class="secondP">
+            © Luisa Castro - Allison Sulca
+        </p>
+    </footer>
     <script src="main.js" type="module"></script>
-  </body>
+</body>
+
 </html>
